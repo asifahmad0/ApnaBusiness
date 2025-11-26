@@ -26,7 +26,7 @@ function Contact() {
 
         try{
 
-          const {data} = await axios.post(import.meta.env.VITE_EMAIL_SEND_API,{
+          const {data} = await axios.post(import.meta.env.VITE_EMAIL_SEND_API,{ //VITE_EMAIL_SEND_API=https://apnabusiness.onrender.com/send/mail
                     uname,
                     mobile,
                     email,
