@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root{
+  --color1:rgb(220, 20, 60);
+  --color:#adff2f;
+  --color_dark:#3c580b;
+  --textColor:rgb(255, 255, 255);
+  --background:#292525;
+  --bg2:#363131;
+  
+
+}
+
+*{
+  flex-wrap: nowrap;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  transform: rotate(30deg);
+  margin: 20px;
+  border-radius: 20px;
+  background: var(--color);
+  background: linear-gradient(90deg, var(--color_dark) 0%, var(--color) 100%);
+}
+.p {
+  color: var(--textColor);
+}
+.sm_nave{
+  background:var(--background);
+  z-index: 99999999;
+  color: var(--textColor);
+}
+.sm_nave ul li a{
+  color: var(--textColor);
+}
+.nav_container{
+border-radius: 10px;
+  
+}
+
+.btn{
+
+background: linear-gradient(90deg, var(--color_dark) 0%, var(--color) 100%);
+transition: 0.5;
+color: black;
+}
+.btn:hover{
+  transform: scale(1.03);
+
+}
+
+.span{
+  color: var(--color);
+
+}
+.sm_nave ul li span,
+.nav ul li span{
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: var(--color);
+  z-index: -1;
+  transition: 0.5s;
+}
+.sm_nave ul li:hover span{
+width: 100%;
+}
+.nav ul li:hover span{
+  width: 100%;
+
+}
+.sm_nave ul li a,
+.nav ul li a{
+  font-family: monospace;
+  font-size: 1.1em;
+  padding: 3px 20px;
+  
+}
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+.four_zero_four_bg h3{
+	font-size:80px;
+  
+}
+			 
+.link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    /*background: #39ac31;*/
+    margin: 20px 0;
+    display: inline-block;}
+.contant_box_404{ margin-top:-50px;}
+
+/*------------------------------------------------------------------------------Home--------------------------*/
+
+.home{
+  background: var(--color);
+}
+.home .div1{
+  background:var(--background);
+}
+
+/* --------------------------service Animate*/
+
+
+.anime{
+  animation: anime 5s linear infinite;
+}
+
+@keyframes anime {
+
+  0%{
+    transform: translateX(0%);
+  }100%{
+    transform: translateX(-50%);
+  }
+  
+}
+/*---------------------------------------------------------why Us-----------------*/
+
+.whyUs{
+  background: var(--color);
+  color: black;
+}
+
+
+/*-----------------------------Why Us------------*/
+
+.card_edge p{
+  font-size: 1.1em;
+  
+}
