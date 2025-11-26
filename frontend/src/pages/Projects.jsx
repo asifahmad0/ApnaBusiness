@@ -62,7 +62,7 @@ export default function ProjectsSection() {
         We Are In All Field
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2 overflow-hidden">
         {videos.map((video) => (
           <HoverVideoCard key={video.id} video={video} />
         ))}
