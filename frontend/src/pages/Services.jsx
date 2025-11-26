@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import softwearDev from '../assets/image/softwearDev.jpeg'
 import web_dev_img from '../assets/image/web_dev_img.jpg'
 import enterprice_img from '../assets/image/enterprise.jpg'
-import quality_img from '../assets/image/Quality.jpg'
+import quality_img from '../assets/image/quality.jpg'
 import cloudImg from '../assets/image/cloud.jpg'
 import cybreSequrity from '../assets/image/cyberSecurity.jpg'
 import cunsult from '../assets/image/cunsult.webp'
