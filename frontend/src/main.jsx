@@ -38,12 +38,11 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <SmNavebar/>
     <Aibot/>
     
     <RouterProvider router={router}/>
     
     
-  </StrictMode>,
+  
 )
