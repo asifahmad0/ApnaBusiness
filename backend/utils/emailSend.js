@@ -1,7 +1,28 @@
 const nodemailer = require('nodemailer');
 
 
+const { Resend } = require("resend");
 
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+const emailSend = async (options) => {
+  try {
+    const response = await resend.emails.send({
+      from: process.env.SMTP_MAIL, // Or your domain
+      to: "asifahma7761@gmail.com",
+      subject: "Mail From Apna Business",
+      text: `${options.name} \n \n ${options.Mobile}\n \n ${options.message} \n\n Sender Email: ${options.userEmail}`
+      
+    });
+
+    console.log("Resend Response:", response);
+    return response;
+
+  } catch (error) {
+    console.error("RESEND ERROR:", error);
+    throw error;
+  }
+};
 
 
 /*
