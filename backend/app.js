@@ -10,7 +10,7 @@ config({ path: "./config.env" });
 
 
 const allowedOrigins = [
-  "https://apna-business..vercel.app",
+  "https://apna-business.vercel.app",
   "http://localhost:5173"  // optional for local development
 ];
 
