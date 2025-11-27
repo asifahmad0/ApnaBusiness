@@ -68,6 +68,7 @@ router.post('/send/mail', async (req, res, next)=>{
             message:" mail send successful"
         })
     }catch (error){
+        console.log("EMAIL ERROR:", error);
         res.status(500).json({
             success:false,
             message:` internale server error ${error}`
