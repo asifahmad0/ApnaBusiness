@@ -35,7 +35,7 @@ app.use(cors({
 app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 
-router.post('/send/mail', async (req, res, next)=>{
+router.post('/', async (req, res, next)=>{
 
     const { uname, mobile, email, message } = req.body;
     console.log(req.body)
