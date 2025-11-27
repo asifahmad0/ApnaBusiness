@@ -37,7 +37,7 @@ app.use(cors({
 
 
 
-router.post('/send/mail', async (req, res, next)=>{
+router.post('/', async (req, res, next)=>{
 
     const { uname, mobile, email, message } = req.body;
     console.log(req.body)
