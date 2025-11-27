@@ -9,16 +9,17 @@ const app = express();
 
 
 config({ path: "./config.env" });
-
+app.use(express.json())
+app.use(express.urlencoded({ extended: true}))
 
 const allowedOrigins = [
-  "https://apna-business..vercel.app",
+  "https://apna-business.vercel.app",
   "http://localhost:5173"  // optional for local development
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
+    if (!origin || process.env.FRONTEND_URL.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error("CORS not allowed"));
@@ -34,8 +35,7 @@ app.use(cors({
 //     credentials: true
 // }))
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true}))
+
 
 router.post('/send/mail', async (req, res, next)=>{
 
