@@ -9,7 +9,7 @@ const emailSend = async (options) => {
   try {
     const response = await resend.emails.send({
       from: 'onboarding@resend.dev', // Or your domain
-      to: "asifahma7761@gmail.com",
+      to: "tiktokvideos1407@gmail.com",
       subject: "Mail From Apna Business",
       text: `${options.name} \n \n ${options.Mobile}\n \n ${options.message} \n\n Sender Email: ${options.userEmail}`
       
