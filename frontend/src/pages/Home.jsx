@@ -34,9 +34,9 @@ function Home() {
             <a className=" w-[150px] px-[15px] py-[5px] mt-2 text-[1.2em] bg-[#adff2f] text-black hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
             href="/contact" data-aos="fade-up">
             Let's Build <ArrowRight/> </a>
-            <a className=" w-[170px] px-[15px] py-[5px] mt-2 text-[1.2em] border border-[#adff2f] bg-transparent text-white hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
+            {/* <a className=" w-[170px] px-[15px] py-[5px] mt-2 text-[1.2em] border border-[#adff2f] bg-transparent text-white hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
             href="/contact" data-aos="fade-up">
-            Let's Discuss <ArrowRight/> </a>
+            Let's Discuss <ArrowRight/> </a> */}
 
           </div>
           
