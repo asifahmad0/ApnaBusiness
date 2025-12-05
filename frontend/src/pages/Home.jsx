@@ -17,9 +17,9 @@ function Home() {
 
   
   return (
-    <div className="home max-w-[100dvw] h-[90dvh] ">
+    <div className="home max-w-[100dvw] h-[90dvh] mt-[20px] ">
 
-      <div className=" div1 bg-white w-[100dvw] h-[90dvh]  flex flex-col items-center justify-around ">
+      <div className=" div1 bg-white w-[100dvw] h-[90dvh] flex flex-col items-center justify-around ">
         
         
         < div className=" div2 p-3 md:px-20 min-w-screen h-[60dvh] flex flex-col gap-7 text-center md:text-start items-center justify-center md:items-start ">
