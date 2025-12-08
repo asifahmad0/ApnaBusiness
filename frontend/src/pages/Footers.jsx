@@ -59,7 +59,7 @@ function Footer() {
             const social_links = {
               facebook: "https://www.facebook.com/profile.php?id=100030803407799",
               linkedin: "http://linkedin.com/in/asif-ahmad7761",
-              instagram: "https://instagram.com",
+              instagram: "https://www.instagram.com/the_formal_b0y/",
               github: "https://github.com/asifahmad0",
             };
             
