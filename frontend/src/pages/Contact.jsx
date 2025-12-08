@@ -112,7 +112,7 @@ function Contact() {
       <a href="http://linkedin.com/in/asif-ahmad7761" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-black rounded-full bg-[#adff2f] flex justify-center items-center" >
         <span className="capitalize"><FaLinkedinIn/></span>
       </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-black rounded-full bg-[#adff2f] flex justify-center items-center" >
+      <a href="https://www.instagram.com/the_formal_b0y/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-black rounded-full bg-[#adff2f] flex justify-center items-center" >
         <span className="capitalize"><FaInstagram/></span>
       </a>
       <a href="https://github.com/asifahmad0" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-black rounded-full bg-[#adff2f] flex justify-center items-center" >
