@@ -10,6 +10,7 @@ import SmNavebar from './componant/SmNavebar.jsx'
 import About from './pages/About.jsx'
 import Services from './pages/Services.jsx'
 import Aibot from './componant/Aibot.jsx'
+import Footer from './pages/Footers'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,8 @@ createRoot(document.getElementById('root')).render(
     <Aibot/>
     
     <RouterProvider router={router}/>
+  
+      <Footer/>
     
     
   </StrictMode>
