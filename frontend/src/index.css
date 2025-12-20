@@ -131,7 +131,7 @@ width: 100%;
 
 
 .anime{
-  animation: anime 3s linear infinite;
+  animation: anime 7s linear infinite;
 }
 
 @keyframes anime {
