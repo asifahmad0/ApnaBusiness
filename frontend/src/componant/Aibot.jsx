@@ -1,56 +1,69 @@
-import React, { useState } from 'react'
-import { BotMessageSquare, X, Send } from 'lucide-react'
+
+import { useEffect, useRef, useState } from 'react'
+import { BotMessageSquare, X, Send, Loader2, Import } from 'lucide-react'
+
 
 function Aibot() {
+  const [isOpen, setOpen] = useState(false)
+  const [input, setInput] = useState("")
+  const [messages, setMessages] = useState([])
+  const [loading, setLoading] = useState(false)
+  const chatEndRef = useRef(null)
 
-  const [isOpen, setOpen] = useState(false);
-  const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([]);
+  // Auto scroll
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }, [messages])
 
-  // === Send message to AI API === //
   const sendMessage = async () => {
-    if (!input.trim()) return;
+    if (!input.trim() || loading) return
 
-    const userMsg = { role: "user", text: input };
-    setMessages(prev => [...prev, userMsg]);
-
-    setInput("");
+    const userMsg = { role: "user", text: input }
+    setMessages(prev => [...prev, userMsg])
+    setInput("")
+    setLoading(true)
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(import.meta.env.BACKEND+"/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input })
-      });
+      })
 
-      const data = await res.json();
+      const data = await res.json()
 
-      const botMsg = { role: "bot", text: data.reply };
-      setMessages(prev => [...prev, botMsg]);
+      setMessages(prev => [
+        ...prev,
+        { role: "bot", text: data.reply || "No response" }
+      ])
 
     } catch (err) {
-      setMessages(prev => [...prev, { role: "bot", text: "Error: Unable to connect to AI" }]);
+      setMessages(prev => [
+        ...prev,
+        { role: "bot", text: "❌ Unable to connect to AI" }
+      ])
+    } finally {
+      setLoading(false)
     }
-  };
+  }
 
-  // Send on Enter key
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") sendMessage();
-  };
+    if (e.key === "Enter") sendMessage()
+  }
 
   return (
     <>
       {/* Floating Button */}
       <div
-        onClick={() => setOpen(!isOpen)}
-        className='fixed w-[70px] h-[70px] rounded-full bg-green-600 text-white 
+       onClick={() => setOpen(!isOpen)}
+       className='fixed w-[70px] h-[70px] rounded-full bg-green-600 text-white 
                    top-[89dvh] lg:bottom-[20px] right-[20px] flex justify-center items-center 
                    cursor-pointer z-[999]'
       >
-        <BotMessageSquare size={32} />
+        <BotMessageSquare size={30} />
       </div>
-
-      {/* Chat Popup */}
+        
+        {/* Chat popup */}
       {isOpen && (
         <div className='fixed mt-[50px] inset-0 bg-black/40 backdrop-blur-sm z-[998] flex justify-end'>
 
@@ -58,42 +71,49 @@ function Aibot() {
                           rounded-lg relative mr-4 mt-4 flex flex-col'>
 
             {/* Header */}
-            <div className='bg-green-600 text-white p-4 rounded-t-lg flex justify-between items-center'>
-              <h2 className='text-lg font-semibold'>AI Assistant</h2>
-              <button onClick={() => setOpen(false)} className='cursor-pointer'>
-                <X size={22} />
-              </button>
+            <div className='bg-green-600 text-white p-4 rounded-t-lg flex justify-between'>
+              <h2 className='font-semibold'>AI Assistant</h2>
+              <X className='cursor-pointer' onClick={() => setOpen(false)} />
             </div>
 
-            {/* Chat Messages */}
+            {/* Messages */}
             <div className='flex-1 overflow-y-auto p-3 space-y-3'>
-              {messages.map((msg, index) => (
+              {messages.map((msg, i) => (
                 <div
-                  key={index}
-                  className={`p-2 rounded-md max-w-[80%] ${
+                  key={i}
+                  className={`p-2 rounded-lg max-w-[80%] text-sm ${
                     msg.role === "user"
-                      ? "bg-green-500 text-white self-end ml-auto"
+                      ? "bg-green-500 text-white ml-auto"
                       : "bg-gray-200 text-black"
                   }`}
                 >
                   {msg.text}
                 </div>
               ))}
+
+              {loading && (
+                <div className='flex items-center gap-2 text-gray-500'>
+                  <Loader2 className='animate-spin' size={16} />
+                   Thinking...
+                </div>
+              )}
+
+              <div ref={chatEndRef} />
             </div>
 
-            {/* Input Box */}
+            {/* Input */}
             <div className='p-3 border-t flex gap-2'>
               <input
-                type="text"
-                value={input}
+                value={input} 
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Type a message..."
-                className='flex-1 h-[40px] border rounded-md px-3 focus:outline-green-600'
+                className='flex-1 border rounded-md px-3 h-[40px]'
               />
-              <button 
-                onClick={sendMessage} 
-                className='bg-green-600 text-white px-4 rounded-md flex items-center'
+              <button
+                onClick={sendMessage}
+                disabled={loading}
+                className='bg-green-600 text-white px-4 rounded-md'
               >
                 <Send size={18} />
               </button>
@@ -106,4 +126,5 @@ function Aibot() {
   )
 }
 
-export default Aibot;
+export default Aibot
+
