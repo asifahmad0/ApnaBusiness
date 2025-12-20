@@ -44,7 +44,7 @@ function Aibot() {
       <div
         onClick={() => setOpen(!isOpen)}
         className='fixed w-[70px] h-[70px] rounded-full bg-green-600 text-white 
-                   top-[87dvh] lg:bottom-[20px] right-[20px] flex justify-center items-center 
+                   top-[89dvh] lg:bottom-[20px] right-[20px] flex justify-center items-center 
                    cursor-pointer z-[999]'
       >
         <BotMessageSquare size={32} />
