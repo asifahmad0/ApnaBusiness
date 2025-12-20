@@ -1,14 +1,19 @@
-const express = require("express");
+const dotenv = require("dotenv");
 const { config } = require("dotenv");
+dotenv.config({ path: "./config.env" });
+config({ path: "./config.env" });
+
+const express = require("express");
 const cors = require("cors");
 const { emailSend } = require("./utils/emailSend");
+const Ai_prompt = require("./AIHandler/Ai.js")
 
 const router = express.Router();
 const app = express();
 
 
 
-config({ path: "./config.env" });
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 
@@ -77,6 +82,11 @@ router.post('/', async (req, res, next)=>{
     }
 })
 app.use(router)
+
+
+app.post("/api/chat", Ai_prompt)
+
+
 
 
 app.listen(process.env.PORT, () => {
