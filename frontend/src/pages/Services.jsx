@@ -74,11 +74,11 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
   ];
 
   return (
-    <div className=" overflow-hidden min-h-screen text-gray-900 bg-[#292525]">
+    <div className=" overflow-hidden min-h-screen text-gray-900 bg-bg1">
       {/* Hero Section */}
-      <section className="bg-crimson py-20 text-center" data-aos='zoom-out'>
-        <h1 className="text-4xl text-[#adff2f] md:text-5xl overflow-hidden font-bold mb-4">Our Services</h1>
-        <p className="text-lg px-6 md:text-xl max-w-3xl mx-auto text-white">
+      <section className="bg-bg1 py-20 text-center" data-aos='zoom-out'>
+        <h1 className="text-4xl text-bg1 md:text-5xl overflow-hidden font-bold mb-4">Our Services</h1>
+        <p className="text-lg px-6 md:text-xl max-w-3xl mx-auto text-textColor">
           Empowering your business with cutting-edge IT solutions, delivered by
           experts you can trust.
         </p>
@@ -90,7 +90,7 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
           <div
             key={index}
             data-aos="fade-up"
-            className="relative bg-[#292525] border border-gray-200 rounded-2xl overflow-hidden 
+            className="relative bg-bg1 border border-gray-200 rounded-2xl overflow-hidden 
             shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div className="overflow-hidden">
               <img
@@ -100,11 +100,11 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
               />
             </div>
             <div className="p-6 text-center flex flex-col items-center">
-              <div className="w-[50px] h-[50px] text-4xl mb-3 overflow-hidden text-black rounded-full bg-[#adff2f] text-[2em] flex items-center justify-center">{service.icon}</div>
-              <h3 className="text-2xl font-semibold text-[#adff2f] mb-2">
+              <div className="w-[50px] h-[50px] text-4xl mb-3 overflow-hidden text-textColor rounded-full bg-primery text-[2em] flex items-center justify-center">{service.icon}</div>
+              <h3 className="text-2xl font-semibold text-primery mb-2">
                 {service.title}
               </h3>
-              <p className="text-white">{service.desc}</p>
+              <p className="text-textColor">{service.desc}</p>
             </div>
           </div>
         ))}
@@ -113,17 +113,17 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
       {/* CTA Section */}
       <section
         data-aos="fade-up"
-        className=" overflow-hidden bg-[#adff2f] py-16 px-6 text-center"
+        className=" overflow-hidden bg-primery py-16 px-6 text-center"
       >
-        <h2 className=" overflow-hidden text-3xl font-bold text-black mb-4">
+        <h2 className=" overflow-hidden text-3xl font-bold text-textColor mb-4">
           Ready to Transform Your Buisines?
         </h2>
-        <p className="text-black max-w-2xl mx-auto mb-8">
+        <p className="text-textColor max-w-2xl mx-auto mb-8">
           Let’s discuss how our tailored IT services can streamline your
           business operations and enhance performance.
         </p>
         <Link to='/contact'>
-        <button className="bg-[#292525] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#3c580b] hover:text-white transition cursor-pointer">
+        <button className="bg-bg1 text-textColor px-8 py-3 rounded-full text-lg font-semibold hover:bg-primery-dark hover:text-textColor transition cursor-pointer">
           Get in Touch
         </button></Link>
       </section>
