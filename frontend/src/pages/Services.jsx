@@ -77,7 +77,7 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
     <div className=" overflow-hidden min-h-screen text-gray-900 bg-bg1">
       {/* Hero Section */}
       <section className="bg-bg1 py-20 text-center" data-aos='zoom-out'>
-        <h1 className="text-4xl text-bg1 md:text-5xl overflow-hidden font-bold mb-4">Our Services</h1>
+        <h1 className="text-4xl text-bg1 md:text-5xl overflow-hidden font-bold mb-4 text-primery">Our Services</h1>
         <p className="text-lg px-6 md:text-xl max-w-3xl mx-auto text-textColor">
           Empowering your business with cutting-edge IT solutions, delivered by
           experts you can trust.
