@@ -21,11 +21,11 @@ export default function VideoSection() {
     <div className="w-full bg-white">
       {/* Text Section */}
       <div className="max-w-6xl mx-auto px-6 pt-20 pb-12">
-        <span className="text-[#3c580b] font-semibold">IT Solutions Simplified</span>
+        <span className="text-primery-dark font-semibold">IT Solutions Simplified</span>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight mt-3 p-2">
+        <h1 className="text-4xl md:text-5xl font-bold text-textColor2 leading-tight mt-3 p-2">
           Empower Your Business With{" "}
-          <span className="text-[#adff2f]">Smart IT Solutions</span>.
+          <span className="text-primery">Smart IT Solutions</span>.
         </h1>
 
         <p className="text-gray-600 max-w-2xl mt-4">
@@ -35,18 +35,18 @@ export default function VideoSection() {
         </p>
 
         <div className="flex gap-4 mt-8">
-          <button className="bg-[#3c580b] text-white px-6 py-3 rounded-lg hover:bg-[#adff2f] hover:text-black transition">
+          <button className="bg-primery-dark text-textColor px-6 py-3 rounded-lg hover:bg-primery hover:text-black transition">
             Get Started
           </button>
 
-          <button className="text-[#3c580b] font-medium hover:text-[#adff2f] transition">
+          <button className="text-primery-dark font-medium hover:text-primery transition">
             Explore Services →
           </button>
         </div>
       </div>
 
       {/* Background band */}
-      <div className="w-full bg-[#3c580b] pt-10 pb-10 relative">
+      <div className="w-full bg-primery-dark pt-10 pb-10 relative">
         {/* Center Video Container */}
         <div className="max-w-6xl mx-auto px-6">
           <div
@@ -75,10 +75,10 @@ export default function VideoSection() {
             {/* Play Icon (only show when paused) */}
             {!isPlaying && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-textColor2/40 backdrop-blur-md rounded-full flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 text-white"
+                    className="w-10 h-10 text-textColor"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
