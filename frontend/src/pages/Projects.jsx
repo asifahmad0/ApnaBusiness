@@ -55,9 +55,9 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-[#292525] py-16 px-4 md:px-10">
+    <div className="min-h-screen w-full bg-bg1 py-16 px-4 md:px-10">
       <h1
-        className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#adff2f] p-3"
+        className="text-4xl md:text-5xl font-bold text-center mb-12 text-primery p-3"
         data-aos="fade-down ">
         We Are In All Field
       </h1>
@@ -91,7 +91,7 @@ function HoverVideoCard({ video }) {
     <div
       data-aos="fade-up"
       className="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group
-                 border-2 border-[#3c580b] hover:border-[#adff2f]
+                 border-2 border-primery-dark hover:border-primery
                  transition-all duration-300"
       onMouseEnter={handlePlay}
       onMouseLeave={handlePause}
@@ -118,7 +118,7 @@ function HoverVideoCard({ video }) {
       {!isPlaying && (
         <div
           className="absolute inset-0 bg-black/40 flex items-center justify-center
-                     text-white text-xl opacity-0 group-hover:opacity-100
+                     text-textColor text-xl opacity-0 group-hover:opacity-100
                      transition-opacity duration-300"
         >
           Hover to Play
