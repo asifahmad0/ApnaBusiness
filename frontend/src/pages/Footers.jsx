@@ -3,16 +3,16 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, } from 'react-icons/fa
 
 function Footer() {
   return (
-    <footer className="bg-[#292525] text-white py-12 px-6 md:px-16 relative overflow-hidden">
+    <footer className="bg-bg1 text-textColor py-12 px-6 md:px-16 relative overflow-hidden">
 
       {/* Floating Gradient Animation */}
-      <div className="absolute inset-0 opacity-20 animate-pulse bg-gradient-to-r from-[#3c580b] via-[#adff2f] to-black blur-2xl"></div>
+      <div className="absolute inset-0 opacity-20 animate-pulse bg-gradient-to-r from-primery-dark via-primery to-textColor2 blur-2xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
 
         {/* Brand */}
         <div className="space-y-4 animate-fade-in">
-          <h2 className="text-3xl font-bold text-[#adff2f] p-2"><span className="text-white">Apna</span>Business</h2>
+          <h2 className="text-3xl font-bold text-primery p-2"><span className="text-textColor">Apna</span>Business</h2>
           <p className="text-gray-300">
             Creating beautiful experiences with bold design and clean code.
           </p>
@@ -20,7 +20,7 @@ function Footer() {
 
         {/* Quick Links */}
         <div className="space-y-4 animate-fade-slide-up">
-          <h3 className="text-xl font-semibold text-[#adff2f]">Quick Links</h3>
+          <h3 className="text-xl font-semibold text-primery">Quick Links</h3>
 
           <ul className="space-y-2">
           {(()=>{
@@ -36,8 +36,8 @@ function Footer() {
             
             return ["Home", "About", "Services", "Contact"].map((link) => (
               <li key={link} className="p-2">
-                <a href={quick_link[link]} className="text-gray-300 hover:text-[#adff2f] transition-colors duration-300 relative group "> {link}
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#adff2f] transition-all duration-300 group-hover:w-full"></span>
+                <a href={quick_link[link]} className="text-gray-300 hover:text-primery transition-colors duration-300 relative group "> {link}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primery transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))
@@ -77,7 +77,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                className="w-10 h-10 text-black rounded-full bg-[#adff2f] flex justify-center items-center hover:scale-[1.2]" >
+                className="w-10 h-10 text-textColor2 rounded-full bg-primery flex justify-center items-center hover:scale-[1.2]" >
         
                 <span className="capitalize">{social_icon[icon]}</span>
               </a>
