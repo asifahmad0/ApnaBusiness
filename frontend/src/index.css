@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme{
+  --color-primery:rgb(19 56 190);
+  --color-mint-600: rgb(19 56 190);
+  --color-primery-dark:#1338BE;
+  --color-textColor:white;
+  --color-bg1:#292525;
+  --color-bg2:#363131;
+}
+
 :root{
   --color1:rgb(220, 20, 60);
   /*--color:#adff2f;*/
