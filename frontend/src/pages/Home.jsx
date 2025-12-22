@@ -31,7 +31,7 @@ function Home() {
             Empowering businesses with innovative tech solutions — from cloud services to AI integration — driving growth, efficiency, and digital transformation.
           </p>
           <div className="btnDiv flex  gap-5 overflow-hidden p-2">
-            <a className=" w-[150px] px-[15px] py-[5px] mt-2 text-[1.2em] bg-primery text-black hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
+            <a className=" w-[150px] px-[15px] py-[5px] mt-2 text-[1.2em] bg-primery text-textColor hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
             href="/contact" data-aos="fade-up">
             Let's Build <ArrowRight/> </a>
             {/* <a className=" w-[170px] px-[15px] py-[5px] mt-2 text-[1.2em] border border-[#adff2f] bg-transparent text-white hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
@@ -43,7 +43,7 @@ function Home() {
         </div>
 
 
-  <div className=" text-primery bg-textColor1 w-full h-[50px] flex flex-col justify-center ">
+  <div className=" text-primery bg-textColor2 w-full h-[50px] flex flex-col justify-center ">
   <div className=" anime w-max flex flex-nowrap gap-11 text-[1.2em] font-bold px-5">
     <h2>Software Development</h2>
     <h2 className="text-textColor">Web Devlopment</h2>
