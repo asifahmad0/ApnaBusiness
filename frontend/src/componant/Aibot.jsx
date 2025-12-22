@@ -56,7 +56,7 @@ function Aibot() {
       {/* Floating Button */}
       <div
        onClick={() => setOpen(!isOpen)}
-       className='fixed w-[70px] h-[70px] rounded-full bg-green-600 text-white 
+       className='fixed w-[70px] h-[70px] rounded-full bg-primery-dark2 text-textColor 
                    top-[89dvh] lg:bottom-[20px] right-[20px] flex justify-center items-center 
                    cursor-pointer z-[999]'
       >
@@ -65,13 +65,13 @@ function Aibot() {
         
         {/* Chat popup */}
       {isOpen && (
-        <div className='fixed mt-[50px] inset-0 bg-black/40 backdrop-blur-sm z-[998] flex justify-end'>
+        <div className='fixed mt-[50px] inset-0 bg-textColor1/40 backdrop-blur-sm z-[998] flex justify-end'>
 
           <div className='w-[90%] sm:w-[400px] h-[76dvh] lg:h-[80vh] bg-white shadow-xl 
                           rounded-lg relative mr-4 mt-4 flex flex-col'>
 
             {/* Header */}
-            <div className='bg-green-600 text-white p-4 rounded-t-lg flex justify-between'>
+            <div className='bg-primery-dark2 text-textColor p-4 rounded-t-lg flex justify-between'>
               <h2 className='font-semibold'>AI Assistant</h2>
               <X className='cursor-pointer' onClick={() => setOpen(false)} />
             </div>
@@ -83,8 +83,8 @@ function Aibot() {
                   key={i}
                   className={`p-2 rounded-lg max-w-[80%] text-sm ${
                     msg.role === "user"
-                      ? "bg-green-500 text-white ml-auto"
-                      : "bg-gray-200 text-black"
+                      ? "bg-green-500 text-textColor ml-auto"
+                      : "bg-gray-200 text-textColor2"
                   }`}
                 >
                   {msg.text}
@@ -113,7 +113,7 @@ function Aibot() {
               <button
                 onClick={sendMessage}
                 disabled={loading}
-                className='bg-green-600 text-white px-4 rounded-md'
+                className='bg-primery-dark2 text-textColor px-4 rounded-md'
               >
                 <Send size={18} />
               </button>
