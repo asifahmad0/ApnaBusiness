@@ -18,7 +18,7 @@ function WhyUs() {
                 <p className='  mt-2 text-md ' data-aos='fade-up'>Choose us for expert innovation, reliable support, cutting-edge technology, and customized solutions that accelerate your business success and digital growth. We Have</p>
             </div>
 
-            <div className=" overflow-hidden grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className=" text-textColor overflow-hidden grid grid-cols-2 md:grid-cols-4 gap-6">
 
                 <div className="card_edge overflow-hidden text-center p-2 " data-aos='fade-up'>
                     <h1 className=' text-2xl md:text-3xl font-bold p-2 '>10+</h1> 
