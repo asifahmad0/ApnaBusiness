@@ -21,7 +21,7 @@ function SmNavebar() {
             <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a href="/">Home</a></li>
             <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a href="/about">About</a></li>
             <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/service">Services</a></li>
-            <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/product">Product</a></li>
+            {/* <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/product">Product</a></li> */}
             <li className=' btn border relative py-[3px] cursor-pointer text-black rounded-[10px] mb-2 '> <a className=' ' href="/contact">Contact</a></li>
       </ul>
 
