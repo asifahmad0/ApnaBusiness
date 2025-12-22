@@ -41,7 +41,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <SmNavebar/>
-    <Aibot/>
+    {/* <Aibot/> */}
     
     <RouterProvider router={router}/>
   
