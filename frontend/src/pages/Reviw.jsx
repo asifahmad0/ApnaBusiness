@@ -78,11 +78,11 @@ export default function ReviewSection() {
   const currentReviews = reviews.slice(indexOfFirstReview, indexOfLastReview);
 
   return (
-    <section className="bg-[#292525] text-white py-20 px-6">
+    <section className="bg-bg1 text-textColor py-20 px-6">
       {/* Title */}
       <div data-aos="fade-up" className="text-center mb-14">
         <h2 className="text-4xl font-bold p-2">
-          What Our <span className="text-[#adff2f]">Clients Say</span>
+          What Our <span className="text-primery">Clients Say</span>
         </h2>
         <p className="text-gray-300 mt-3">
           Trusted by businesses across the globe.
@@ -96,16 +96,16 @@ export default function ReviewSection() {
             key={indexOfFirstReview + i}
             data-aos="zoom-in"
             data-aos-delay={i * 150}
-            className="relative p-6 rounded-xl bg-[#3c580b]/20 border border-[#3c580b] shadow-lg
+            className="relative p-6 rounded-xl bg-primery-dark/20 border border-primery-dark shadow-lg
                        hover:scale-105 transition-transform duration-300"
           >
-            <div className="absolute inset-0 rounded-xl p-[2px] bg-gradient-to-br from-[#adff2f] to-[#3c580b] opacity-40 blur-md"></div>
+            <div className="absolute inset-0 rounded-xl p-[2px] bg-gradient-to-br from-primery to-primery-dark opacity-40 blur-md"></div>
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src={r.image}
                   alt={r.name}
-                  className="w-14 h-14 rounded-full border-2 border-[#adff2f]"
+                  className="w-14 h-14 rounded-full border-2 border-primery"
                 />
                 <div>
                   <h3 className="font-semibold text-lg">{r.name}</h3>
@@ -123,14 +123,14 @@ export default function ReviewSection() {
         <button
           type="button"
           onClick={handlePrev}
-          className="px-5 py-2 rounded bg-gray-700 text-white hover:bg-gray-600"
+          className="px-5 py-2 rounded bg-gray-700 text-textColor hover:bg-gray-600"
         >
           &larr; Previous
         </button>
         <button
           type="button"
           onClick={handleNext}
-          className="px-5 py-2 rounded bg-[#adff2f] text-black hover:bg-lime-400"
+          className="px-5 py-2 rounded bg-primery text-black hover:bg-lime-400"
         >
           Next &rarr;
         </button>
