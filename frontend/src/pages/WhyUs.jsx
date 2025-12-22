@@ -10,12 +10,12 @@ function WhyUs() {
       
 
   return (
-    <div className=' whyUs text-white w-[100dvw] lg:px-10 p-5'>
+    <div className=' whyUs text-textColor w-[100dvw] lg:px-10 p-5'>
         <div className=" lg:p-5 flex flex-col gap-5 ">
             
-            <div className=" text-center overflow-hidden">
+            <div className=" text-textColor text-center overflow-hidden">
                 <h1 className=" md:border-none md:w-full px-2 text-2xl font-bold " data-aos='fade-up'>Why Us ?</h1>
-                <p className=' text-black mt-2 text-md ' data-aos='fade-up'>Choose us for expert innovation, reliable support, cutting-edge technology, and customized solutions that accelerate your business success and digital growth. We Have</p>
+                <p className='  mt-2 text-md ' data-aos='fade-up'>Choose us for expert innovation, reliable support, cutting-edge technology, and customized solutions that accelerate your business success and digital growth. We Have</p>
             </div>
 
             <div className=" overflow-hidden grid grid-cols-2 md:grid-cols-4 gap-6">
