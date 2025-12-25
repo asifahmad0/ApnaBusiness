@@ -7,7 +7,7 @@ import softwearDev from '../assets/image/softwearDev.jpeg'
 import web_dev_img from '../assets/image/web_dev_img.jpg'
 import enterprice_img from '../assets/image/enterprise.jpg'
 import quality_img from '../assets/image/quality.jpg'
-import cloudImg from '../assets/image/cloud.jpg'
+import nfc_card from '../assets/image/nfc_card.jpg'
 import ai_auto from '../assets/image/ai_auto.jpg'
 import cunsult from '../assets/image/cunsult.webp'
 import data_analist from '../assets/image/data_analist.jpg'
@@ -49,7 +49,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
     title: "NFC Smart Card Solutions",
     desc: "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
      icon: <IdCard />,
-      img: cloudImg,
+      img: nfc_card,
   },
    {
     title: "AI Automation Solutions",
