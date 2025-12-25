@@ -44,20 +44,20 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
       desc: "We provide end-to-end testing to ensure your product is bug free and running as it should during each stage of devlopment through to its launch.",
       icon: <MonitorCog/>,
       img: quality_img,
-    },    
-    {
-      title: "Cloud Solutions",
-      desc: "Scale your infrastructure with our secure and flexible cloud services, designed for performance and reliability.",
-      icon: <Cloud/>,
+    },   
+   {
+    title: "NFC Smart Card Solutions",
+    description:
+      "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
+     icon: <Cloud/>,
       img: cloudImg,
-    },
-    {
-      title: "Cybersecurity",
-      desc: "Protect your digital assets with our advanced security frameworks, penetration testing, and risk management.",
-      icon: <ShieldCheck />,
-      img: cybreSequrity,
-    },
-    
+  },
+   {
+    title: "AI Automation Solutions",
+    desc: "Smart AI-powered automation to optimize workflows, enhance productivity, and scale your business efficiently.",
+    icon: <ShieldCheck />,
+    img: cybreSequrity,
+  },   
     {
       title: "IT Consulting",
       desc: "Strategic technology guidance to optimize your operations and align IT with your business objectives.",
@@ -69,9 +69,10 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
       desc: "We develop solutions to help your leverage unseen insights and bring improved decision making and growth",
       icon: <ChartBar/>,
       img: data_analist,
-    },
-    
+    },    
   ];
+
+  
 
   return (
     <div className=" overflow-hidden min-h-screen text-gray-900 bg-bg1">
