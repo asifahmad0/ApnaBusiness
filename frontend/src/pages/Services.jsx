@@ -11,7 +11,7 @@ import cloudImg from '../assets/image/cloud.jpg'
 import cybreSequrity from '../assets/image/cyberSecurity.jpg'
 import cunsult from '../assets/image/cunsult.webp'
 import data_analist from '../assets/image/data_analist.jpg'
-import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCog, ShieldCheck } from "lucide-react";
+import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, MessagesSquare, MonitorCog, ShieldCheck,  } from "lucide-react";
 
  function Services() {
   useEffect(() => {
@@ -49,13 +49,13 @@ import { AppWindow, ChartBar, ChartPie, Cloud, Laptop, MessagesSquare, MonitorCo
     title: "NFC Smart Card Solutions",
     description:
       "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
-     icon: <Cloud/>,
+     icon: <IdCard />,
       img: cloudImg,
   },
    {
     title: "AI Automation Solutions",
     desc: "Smart AI-powered automation to optimize workflows, enhance productivity, and scale your business efficiently.",
-    icon: <ShieldCheck />,
+    icon: <BrainCircuit />,
     img: cybreSequrity,
   },   
     {
