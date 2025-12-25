@@ -47,8 +47,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
     },   
    {
     title: "NFC Smart Card Solutions",
-    description:
-      "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
+    desc: "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
      icon: <IdCard />,
       img: cloudImg,
   },
