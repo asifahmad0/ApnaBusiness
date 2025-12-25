@@ -8,7 +8,7 @@ import web_dev_img from '../assets/image/web_dev_img.jpg'
 import enterprice_img from '../assets/image/enterprise.jpg'
 import quality_img from '../assets/image/quality.jpg'
 import cloudImg from '../assets/image/cloud.jpg'
-import cybreSequrity from '../assets/image/cyberSecurity.jpg'
+import ai_auto from '../assets/image/ai_auto.jpg'
 import cunsult from '../assets/image/cunsult.webp'
 import data_analist from '../assets/image/data_analist.jpg'
 import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, MessagesSquare, MonitorCog, ShieldCheck,  } from "lucide-react";
@@ -55,7 +55,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
     title: "AI Automation Solutions",
     desc: "Smart AI-powered automation to optimize workflows, enhance productivity, and scale your business efficiently.",
     icon: <BrainCircuit />,
-    img: cybreSequrity,
+    img: ai_auto,
   },   
     {
       title: "IT Consulting",
