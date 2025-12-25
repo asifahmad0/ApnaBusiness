@@ -96,7 +96,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
               <img
                 src={service.img}
                 alt={service.title}
-                className="h-48 w-full object-cover transition-transform duration-500 hover:scale-110"
+                className="h-48 w-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy"
               />
             </div>
             <div className="p-6 text-center flex flex-col items-center">
