@@ -10,8 +10,8 @@ function SmNavebar() {
     <div className={`sm_nave fixed z-[9999] w-[100dvw] h-[60px] flex  lg:flex-row items-center  justify-between px-17  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
 
       <div className="logo  flex flex-col items-center ">
-        <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">Digilink </h1>
-        <span className=" text-textColor text-sm -mt-[5px] "> tech solution</span>
+        <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
+        <span className=" text-textColor text-sm -mt-[5px] "> TECH SOLUTION</span>
       </div>
       
 
