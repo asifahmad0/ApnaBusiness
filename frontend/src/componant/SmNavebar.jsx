@@ -9,7 +9,7 @@ function SmNavebar() {
   return (
     <div className={`sm_nave fixed z-[9999] w-[100dvw] h-[60px] flex  lg:flex-row items-center  justify-between px-17  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
 
-      <div className="logo font-[monospace] p-1 text-xl lg:text-2xl font-bold text-primery border ">Digilink <span className=" text-textColor text-sm"><br/> tech solution</span></div>
+      <div className="logo font-[monospace] p-1 text-xl lg:text-2xl font-bold text-primery border ">Digilink <br/><span className=" text-textColor text-sm"> tech solution</span></div>
       
 
       {/* Menu Links */}
