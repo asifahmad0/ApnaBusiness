@@ -25,7 +25,7 @@ function WhyUs() {
                     <p className='text-sm'> Services Provide</p>
                 </div>
                 <div className="card_edge overflow-hidden text-center p-2" data-aos='fade-up'>
-                    <h1 className=' text-2xl md:text-3xl font-bold p-2 '>1000+</h1> 
+                    <h1 className=' text-2xl md:text-3xl font-bold p-2 '>100+</h1> 
                     <p className='text-sm'>Satisfied Clients</p>
                 </div>
                 <div className="card_edge overflow-hidden text-center p-2" data-aos='fade-up'>
