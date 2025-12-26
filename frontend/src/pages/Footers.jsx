@@ -12,7 +12,10 @@ function Footer() {
 
         {/* Brand */}
         <div className="space-y-4 animate-fade-in">
-          <h2 className="text-3xl font-bold text-primery p-2"><span className="text-textColor">Apna</span>Business</h2>
+          <div className="logo p-2 flex flex-col items-center ">
+        <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
+        <span className=" text-textColor text-sm -mt-[5px] "> TECH SOLUTION</span>
+      </div>
           <p className="text-gray-300">
             Creating beautiful experiences with bold design and clean code.
           </p>
