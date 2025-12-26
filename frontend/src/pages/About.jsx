@@ -33,6 +33,7 @@ function About() {
               Who We Are
             </h2>
             <p className="text-gray-700 mb-4">
+              Star Fusion Tech Solution Founded by Asif Ahmad in 2025,
               We are a leading IT service company specializing in delivering
               customized technology solutions that drive business success. Our
               team of certified experts brings deep technical knowledge and
