@@ -46,13 +46,13 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
       img: quality_img,
     },   
    {
-    title: "NFC Smart Card Solutions",
+    title: "NFC Smart Card ",
     desc: "Modern NFC-enabled cards for instant digital sharing, branding, and contactless engagement.",
      icon: <IdCard />,
       img: nfc_card,
   },
    {
-    title: "AI Automation Solutions",
+    title: "AI Automation ",
     desc: "Smart AI-powered automation to optimize workflows, enhance productivity, and scale your business efficiently.",
     icon: <BrainCircuit />,
     img: ai_auto,
