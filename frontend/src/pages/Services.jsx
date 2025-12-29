@@ -91,7 +91,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
             key={index}
             data-aos="fade-up"
             className="relative bg-bg3 border border-gray-200 rounded-2xl overflow-hidden 
-            shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+            shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 hover:border-primery">
             <div className="overflow-hidden">
               <img
                 src={service.img}
