@@ -18,7 +18,7 @@
   /*--color:#adff2f;*/
 	--color:#3944BE;
   --color_dark:#1338BE;
-  --textColor:white;
+  --textColor:black;
   --background:#292525;
   --bg2:#363131;
   
@@ -60,7 +60,6 @@ border-radius: 10px;
 
 background: linear-gradient(90deg, var(--color_dark) 0%, var(--color) 100%);
 transition: 0.5;
-color: black;
 }
 .btn:hover{
   transform: scale(1.03);
