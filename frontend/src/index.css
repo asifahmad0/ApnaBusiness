@@ -45,10 +45,10 @@
 }
 .sm_nave{
   z-index: 99999999;
-  color: var(--textColor2);
+  color: var(--textColor);
 }
 .sm_nave ul li a{
-  color: var(--textColor2);
+  color: var(--textColor);
 }
 .nav_container{
 border-radius: 10px;
