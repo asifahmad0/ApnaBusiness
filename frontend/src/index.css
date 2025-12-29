@@ -60,7 +60,7 @@ border-radius: 10px;
 
 background: linear-gradient(90deg, var(--color_dark) 0%, var(--color) 100%);
 transition: 0.5;
-color:var(--textColor2);
+color: var(--textColor2);
 }
 .btn:hover{
   transform: scale(1.03);
