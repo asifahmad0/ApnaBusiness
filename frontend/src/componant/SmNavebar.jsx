@@ -7,7 +7,7 @@ function SmNavebar() {
 
 
   return (
-    <div className={`sm_nave bg-bg3 fixed z-[9999] w-[100dvw] h-[60px] flex  lg:flex-row items-center  justify-between px-17  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
+    <div className={`sm_nave bg-bg3 fixed z-[9999] w-[100dvw] h-[60px] flex  lg:flex-row items-center  justify-between px-17 shadow-lg  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
 
       <div className="logo  flex flex-col items-center ">
         <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
@@ -25,7 +25,7 @@ function SmNavebar() {
             <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a href="/about">About</a></li>
             <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/service">Services</a></li>
             {/* <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/product">Product</a></li> */}
-            <li className=' btn border relative py-[3px] cursor-pointer text-black rounded-[10px] mb-2 '> <a className=' ' href="/contact">Contact</a></li>
+            <li className=' btn border relative py-[3px] cursor-pointer text-textColor2 rounded-[10px] mb-2 '> <a className=' ' href="/contact">Contact</a></li>
       </ul>
 
       <button
