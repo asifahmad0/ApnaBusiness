@@ -13,7 +13,7 @@ function SmNavebar() {
       <div className="logo  flex flex-col items-center ">
         {/* <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
         <span className=" text-textColor text-sm -mt-[5px] "> TECH SOLUTION</span> */}
-        <img src={logo} className=" h-[50px] coverd" alt="Star-Fusion Tech Solution" />
+        <img src={t-logo1} className=" h-[50px] coverd" alt="Star-Fusion Tech Solution" />
       </div>
       
 
