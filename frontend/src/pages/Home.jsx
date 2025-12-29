@@ -17,9 +17,9 @@ function Home() {
 
   
   return (
-    <div className="home max-w-[100dvw] h-[90dvh] mt-[20px] ">
+    <div className="home bg-bg3 max-w-[100dvw] h-[90dvh] mt-[20px] ">
 
-      <div className=" div1 bg-white w-[100dvw] h-[90dvh] flex flex-col items-center justify-around ">
+      <div className=" div1 bg-bg3 w-[100dvw] h-[90dvh] flex flex-col items-center justify-around ">
         
         
         < div className=" div2 p-3 md:px-20 min-w-screen h-[60dvh] flex flex-col gap-7 text-center md:text-start items-center justify-center md:items-start ">
@@ -31,7 +31,7 @@ function Home() {
             Empowering businesses with innovative tech solutions — from cloud services to AI integration — driving growth, efficiency, and digital transformation.
           </p>
           <div className="btnDiv flex  gap-5 overflow-hidden p-2">
-            <a className=" w-[150px] px-[15px] py-[5px] mt-2 text-[1.2em] bg-primery text-textColor hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
+            <a className=" w-[150px] px-[15px] py-[5px] mt-2 text-[1.2em] bg-primery text-textColor2 hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
             href="/contact" data-aos="fade-up">
             Let's Build <ArrowRight/> </a>
             {/* <a className=" w-[170px] px-[15px] py-[5px] mt-2 text-[1.2em] border border-[#adff2f] bg-transparent text-white hover:scale-[1.03] rounded-[10px] flex items-center gap-1 "
