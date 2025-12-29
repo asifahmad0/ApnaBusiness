@@ -11,7 +11,7 @@ function About() {
     
 
   return (
-    <div className="bg-textColor text-gray-900 min-h-screen">
+    <div className="bg-textColor2 text-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className=" text-textColor py-20" data-aos='zoom-in'>
         <div className=" max-w-6x  mx-auto px-6 text-center">

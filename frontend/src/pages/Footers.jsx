@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, } from 'react-icons/fa6';
+import tlogo2 from '../assets/logo/tlogo1.png'
 
 function Footer() {
   return (
@@ -12,10 +13,9 @@ function Footer() {
 
         {/* Brand */}
         <div className="space-y-4 animate-fade-in">
-          <div className="logo p-2 flex flex-col items-center ">
-        <h1 className=" font-[monospace] text-xl lg:text-3xl font-bold text-primery ">STAR FUSION </h1>
-        <span className=" text-textColor text-xl -mt-[5px] "> TECH SOLUTION</span>
-      </div>
+                <div className=" logo flex flex-col items-center ">
+                  <img src={tlogo2} className=" h-[200px] coverd bg-white" alt="Star-Fusion Tech Solution" />
+                </div>
           <p className="text-gray-300">
             Creating beautiful experiences with bold design and clean code.
           </p>

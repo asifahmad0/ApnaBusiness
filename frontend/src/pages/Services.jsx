@@ -74,9 +74,9 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
   
 
   return (
-    <div className=" overflow-hidden min-h-screen text-gray-900 bg-bg1">
+    <div className=" overflow-hidden min-h-screen text-gray-900 bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-bg1 py-20 text-center" data-aos='zoom-out'>
+      <section className="bg-gray-50 py-20 text-center" data-aos='zoom-out'>
         <h1 className="text-4xl text-bg1 md:text-5xl overflow-hidden font-bold mb-4 text-primery">Our Services</h1>
         <p className="text-lg px-6 md:text-xl max-w-3xl mx-auto text-textColor">
           Empowering your business with cutting-edge IT solutions, delivered by
@@ -90,7 +90,7 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
           <div
             key={index}
             data-aos="fade-up"
-            className="relative bg-bg1 border border-gray-200 rounded-2xl overflow-hidden 
+            className="relative bg-bg3 border border-gray-200 rounded-2xl overflow-hidden 
             shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
             <div className="overflow-hidden">
               <img
@@ -115,15 +115,15 @@ import { AppWindow, BrainCircuit, ChartBar, ChartPie, Cloud, IdCard, Laptop, Mes
         data-aos="fade-up"
         className=" overflow-hidden bg-primery py-16 px-6 text-center"
       >
-        <h2 className=" overflow-hidden text-3xl font-bold text-textColor mb-4">
+        <h2 className=" overflow-hidden text-3xl font-bold text-textColor2 mb-4">
           Ready to Transform Your Buisines?
         </h2>
-        <p className="text-textColor max-w-2xl mx-auto mb-8">
+        <p className="text-textColor2 max-w-2xl mx-auto mb-8">
           Let’s discuss how our tailored IT services can streamline your
           business operations and enhance performance.
         </p>
         <Link to='/contact'>
-        <button className="bg-bg1 text-textColor px-8 py-3 rounded-full text-lg font-semibold hover:bg-primery-dark hover:text-textColor transition cursor-pointer">
+        <button className="bg-bg3 text-textColor px-8 py-3 rounded-full text-lg font-semibold hover:bg-primery-dark hover:text-textColor2 transition cursor-pointer">
           Get in Touch
         </button></Link>
       </section>

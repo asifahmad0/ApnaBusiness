@@ -21,9 +21,9 @@ export default function VideoSection() {
     <div className="w-full bg-white">
       {/* Text Section */}
       <div className="max-w-6xl mx-auto px-6 pt-20 pb-12">
-        <span className="text-primery-dark font-semibold">IT Solutions Simplified</span>
+        <span className="text-primery font-semibold">IT Solutions Simplified</span>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-textColor2 leading-tight mt-3 p-2">
+        <h1 className="text-4xl md:text-5xl font-bold text-textColor leading-tight mt-3 p-2">
           Empower Your Business With{" "}
           <span className="text-primery">Smart IT Solutions</span>.
         </h1>
@@ -35,18 +35,18 @@ export default function VideoSection() {
         </p>
 
         <div className="flex gap-4 mt-8">
-          <button className="bg-primery-dark text-textColor px-6 py-3 rounded-lg hover:bg-primery hover:text-black transition">
+          <button className="bg-primery text-textColor2 px-6 py-3 rounded-lg hover:bg-primery hover:text-black transition">
             Get Started
           </button>
 
-          <button className="text-primery-dark font-medium hover:text-primery transition">
+          <button className="text-primery font-medium hover:text-primery transition">
             Explore Services →
           </button>
         </div>
       </div>
 
       {/* Background band */}
-      <div className="w-full bg-primery-dark pt-10 pb-10 relative">
+      <div className="w-full bg-primery pt-10 pb-10 relative">
         {/* Center Video Container */}
         <div className="max-w-6xl mx-auto px-6">
           <div

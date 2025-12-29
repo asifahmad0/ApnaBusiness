@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-impor t-logo1 from '../assets/logo/t-logo1.jpeg'
-impor t-logo2 from '../assets/logo/t-logo2.jpeg'
+import tlogo2 from '../assets/logo/tlogo2.png';
 function SmNavebar() {
 
   const [isOpen, setIsOpen] = useState(false)
@@ -10,10 +9,11 @@ function SmNavebar() {
   return (
     <div className={`sm_nave bg-bg3 fixed z-[9999] w-screen h-[60px] flex  lg:flex-row items-center  justify-between px-17 shadow-lg  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
 
-      <div className="logo  flex flex-col items-center ">
+      <div className=" logo bg-red-500 flex flex-col items-center ">
+        <img src={tlogo2} className=" h-[80px] coverd bg-white" alt="Star-Fusion Tech Solution" />
         {/* <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
         <span className=" text-textColor text-sm -mt-[5px] "> TECH SOLUTION</span> */}
-        <img src={t-logo1} className=" h-[50px] coverd" alt="Star-Fusion Tech Solution" />
+        
       </div>
       
 
@@ -23,9 +23,9 @@ function SmNavebar() {
           isOpen ? "translate-y-0 opacity-100 top-[150px]" : "opacity-0 -translate-y-10"
         }`}
       >
-            <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a href="/">Home</a></li>
-            <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a href="/about">About</a></li>
-            <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/service">Services</a></li>
+            <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a className=" text-textColor" href="/">Home</a></li>
+            <li className=' relative py-[3px] text-white mt-2'> <span className='absolute duretion-200'></span><a className=" text-textColor" href="/about">About</a></li>
+            <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a className=" text-textColor" href="/service">Services</a></li>
             {/* <li className=' relative py-[3px] text-white'> <span className='absolute duretion-200'></span><a href="/product">Product</a></li> */}
             <li className=' btn border relative py-[3px] cursor-pointer  rounded-[10px] mb-2 '> <a className=' text-textColor2 ' href="/contact">Contact</a></li>
       </ul>
@@ -39,9 +39,9 @@ function SmNavebar() {
         onClick={() => setIsOpen(!isOpen)}>
 
         <div className="w-6 h-5 flex flex-col justify-between overflow-hidden">
-          <span className={`w-full h-0.5 bg-white rounded-full transition-all duretion-500 ${isOpen ? "rotate-55 translate-y-2" : ""}`}></span>
-          <span className={`w-full h-0.5 bg-white rounded-full transition-opacity duretion-500 ${isOpen ? "opacity-0" : ""}`}></span>
-          <span className={`w-full h-0.5 bg-white rounded-full transition-all duretion-500 ${isOpen ? "-rotate-55 -translate-y-2" : ""}`}></span>
+          <span className={`w-full h-0.5 bg-black rounded-full transition-all duretion-500 ${isOpen ? "rotate-55 translate-y-2" : ""}`}></span>
+          <span className={`w-full h-0.5 bg-black rounded-full transition-opacity duretion-500 ${isOpen ? "opacity-0" : ""}`}></span>
+          <span className={`w-full h-0.5 bg-black rounded-full transition-all duretion-500 ${isOpen ? "-rotate-55 -translate-y-2" : ""}`}></span>
         </div>
       </button>
 

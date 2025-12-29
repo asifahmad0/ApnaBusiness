@@ -45,11 +45,7 @@ function Contact() {
           toast.success(data.message)
           setloding(false)
           
-          // console.log(uname)
-          // console.log(mobile)
-          // console.log(email)
-          // console.log(message)
-        
+         
 
         }catch(error){
             toast.error(error.message)
@@ -64,20 +60,20 @@ function Contact() {
     
 
   return (
-    <div className="min-h-screen bg-bg2 text-textColor px-6 py-12 flex justify-center items-center">
+    <div className="min-h-screen bg-bg3 text-textColor px-6 py-12 flex justify-center items-center">
       
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-4xl bg-bg1 rounded-2xl shadow-xl p-10">
+        className="w-full max-w-4xl bg-primery rounded-2xl shadow-xl p-10">
 
         {/* Header */}
         <h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl font-bold mb-6 text-center  p-2" data-aos='zoom-out'>Contact <span className="text-primery">Us</span>
+          className="text-4xl font-bold mb-6 text-center p-2 text-textColor " data-aos='zoom-out'>Contact <span className="text-primery-dark">Us</span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -96,8 +92,8 @@ function Contact() {
                 transition={{ delay: 0.2 + i * 0.1 }}
                 className="text-lg"
               >
-                <p className="font-semibold">{item.label}</p>
-                <p className="text-gray-300">{item.value}</p>
+                <p className="font-semibold text-primery-dark">{item.label}</p>
+                <p className="text-textColor2">{item.value}</p>
               </motion.div>
             ))}
 
@@ -106,16 +102,16 @@ function Contact() {
 <div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="flex gap-4 mt-4 p-2" data-aos='slide-right'>
 
 
-      <a href="https://www.facebook.com/profile.php?id=100030803407799" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery flex justify-center items-center" >
+      <a href="https://www.facebook.com/profile.php?id=100030803407799" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery-dark flex justify-center items-center" >
         <span className="capitalize"><FaFacebook/></span>
       </a>
-      <a href="http://linkedin.com/in/asif-ahmad7761" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery flex justify-center items-center" >
+      <a href="http://linkedin.com/in/asif-ahmad7761" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery-dark flex justify-center items-center" >
         <span className="capitalize"><FaLinkedinIn/></span>
       </a>
-      <a href="https://www.instagram.com/the_formal_b0y/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery flex justify-center items-center" >
+      <a href="https://www.instagram.com/the_formal_b0y/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery-dark flex justify-center items-center" >
         <span className="capitalize"><FaInstagram/></span>
       </a>
-      <a href="https://github.com/asifahmad0" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery flex justify-center items-center" >
+      <a href="https://github.com/asifahmad0" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, rotate: 5 }} className="w-10 h-10 text-textColor2 rounded-full bg-primery-dark flex justify-center items-center" >
         <span className="capitalize"><FaGithub/></span>
       </a>
 
@@ -126,12 +122,12 @@ function Contact() {
           {/* Contact Form */}
           <motion.form onSubmit={SendMail} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, duration: 0.6 }} className="space-y-6 p-2">
             
-            <input value={uname} onChange={(e)=>setname(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="text" name='uname' placeholder='Your Name' required className="w-full px-4 py-3 bg-bg2 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
-            <input value={mobile} onChange={(e)=>setMobile(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="text" name='mobile' placeholder='Your Mobile' required className="w-full px-4 py-3 bg-bg2 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
-            <input value={email} onChange={(e)=>setEmail(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="email" name='email' placeholder='Your Email' required className="w-full px-4 py-3 bg-bg2 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
-            <textarea value={message} onChange={(e)=>setMessage(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} name='message' placeholder="Your Message..." required rows="4" className="w-full px-4 py-3 bg-bg2 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
+            <input value={uname} onChange={(e)=>setname(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="text" name='uname' placeholder='Your Name' required className="w-full px-4 py-3 bg-bg3 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
+            <input value={mobile} onChange={(e)=>setMobile(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="text" name='mobile' placeholder='Your Mobile' required className="w-full px-4 py-3 bg-bg3 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
+            <input value={email} onChange={(e)=>setEmail(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} type="email" name='email' placeholder='Your Email' required className="w-full px-4 py-3 bg-bg3 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
+            <textarea value={message} onChange={(e)=>setMessage(e.target.value)} whileFocus={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 200 }} name='message' placeholder="Your Message..." required rows="4" className="w-full px-4 py-3 bg-bg3 rounded-xl text-textColor focus:outline-none focus:ring-2 focus:ring-primery transition" data-aos='slide-left'/>
 
-            <motion.button type='submit' whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="w-full bg-primery hover:bg-primery-dark hover:text-textColor text-textColor2 py-3 rounded-xl text-lg font-semibold transition">
+            <motion.button type='submit' whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="w-full bg-primery-dark text-textColor2 py-3 rounded-xl text-lg font-semibold transition">
               Send Message
             </motion.button>
           </motion.form>

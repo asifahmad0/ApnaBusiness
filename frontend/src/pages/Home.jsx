@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import img1 from '../assets/image/image1.png'
 import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +24,7 @@ function Home() {
         < div className=" div2 p-3 md:px-20 min-w-screen h-[60dvh] flex flex-col gap-7 text-center md:text-start items-center justify-center md:items-start ">
           <h2 className=" text-3xl text-textColor overflow-hidden md:text-4xl lg:text-6xl font-bold " data-aos="zoom-in"> 
             Delight your Customers with
-            <br /> <span className="text-primery">Gen-AI Powered Apna Business</span>
+            <br /> <span className="text-primery">Gen-AI Powered Star Fusion</span>
           </h2>
           <p className="p text-xl md:text-2xl " data-aos="fade-up">
             Empowering businesses with innovative tech solutions — from cloud services to AI integration — driving growth, efficiency, and digital transformation.

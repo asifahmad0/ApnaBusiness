@@ -21,7 +21,7 @@ function Notfound404() {
 		
 		<p>the page you are looking for not avaible!</p>
 		
-		<a href="/" className="link_404 bg-[crimson]">Go to Home</a>
+		<a href="/" className="link_404 bg-primery">Go to Home</a>
 	</div>
 		</div>
 		</div>

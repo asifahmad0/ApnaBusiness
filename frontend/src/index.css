@@ -32,6 +32,7 @@
   list-style: none;
   overflow-x: hidden;
 }
+
 .box{
   width: 100px;
   height: 100px;
@@ -46,11 +47,8 @@
 }
 .sm_nave{
   z-index: 99999999;
-  color: var(--textColor);
 }
-.sm_nave ul li a{
-  color: var(--textColor);
-}
+
 .nav_container{
 border-radius: 10px;
   
@@ -134,13 +132,7 @@ width: 100%;
 
 /*------------------------------------------------------------------------------Home--------------------------*/
 
-.home{
-  /* background: var(--color); */
-  
-}
-/* .home .div1{
-  background:var(--background);
-} */
+
 
 /* --------------------------service Animate*/
 
@@ -162,7 +154,7 @@ width: 100%;
 
 .whyUs{
   background: var(--color);
-  color: black;
+  color: white;
 }
 
 
