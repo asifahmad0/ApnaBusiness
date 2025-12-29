@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primery:rgb(19 56 190);
+  /*--color-primery:rgb(19 56 190);*/
+  --color-primery:#0071c4;
   --color-mint-600: rgb(19 56 190);
   --color-primery-dark:#051094;
   --color-primery-dark2:#1520a6;
@@ -133,6 +134,7 @@ width: 100%;
 /*------------------------------------------------------------------------------Home--------------------------*/
 
 .home{
+  /* background: var(--color); */
   background: var(--color);
 }
 .home .div1{
