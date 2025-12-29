@@ -44,12 +44,11 @@
   color: var(--textColor);
 }
 .sm_nave{
-  background:var(--background);
   z-index: 99999999;
-  color: var(--textColor);
+  color: var(--textColor2);
 }
 .sm_nave ul li a{
-  color: var(--textColor);
+  color: var(--textColor2);
 }
 .nav_container{
 border-radius: 10px;
