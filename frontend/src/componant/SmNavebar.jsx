@@ -7,13 +7,10 @@ function SmNavebar() {
 
 
   return (
-    <div className={`sm_nave bg-bg3 fixed z-[9999] w-screen h-[60px] flex  lg:flex-row items-center  justify-between px-17 shadow-lg  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
+    <div className={`sm_nave bg-bg3 fixed z-[9999] w-screen h-[60px] flex lg:flex-row items-center justify-between  lg:px-17 shadow-lg  ${isOpen? "h-screen flex-col": "h-[50px] overflow-hidden"} `}>
 
-      <div className=" logo bg-red-500 flex flex-col items-center ">
-        <img src={tlogo2} className=" h-[80px] coverd bg-white" alt="Star-Fusion Tech Solution" />
-        {/* <h1 className=" font-[monospace] text-xl lg:text-2xl font-bold text-primery ">STAR FUSION </h1>
-        <span className=" text-textColor text-sm -mt-[5px] "> TECH SOLUTION</span> */}
-        
+      <div className=" logo flex flex-col items-center ">
+        <img src={tlogo2} className=" h-[80px] coverd bg-white" alt="Star-Fusion Tech Solution" />      
       </div>
       
 
